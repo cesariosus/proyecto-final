@@ -16,7 +16,7 @@ html{
 
 body {
   background-color: var(--background-color);
-  background-image: url('./assets/uuundulate.svg');
+  background-image: var(--background-img);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
