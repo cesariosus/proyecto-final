@@ -1,0 +1,20 @@
+:root{
+  --background-color: #252320;
+  --verde-oscuro-opaco: #2b2a269b;
+  --verde-claro: #ACBE4A;
+  --texto-secundario: #C8C4C4;
+  --blanco: #ffffff;
+  --dark-grey: #626362;
+  --gris-claro: #D9D9D9;
+  --verde-claro-opaco: #adbe4a97;
+}
+
+[data-theme= "light"]{
+  --background-color: #ffffff;
+  --verde-claro: #ACBE4A;
+  --texto-secundario: #C8C4C4;
+  --blanco: #252320;
+  --dark-grey: #626362;
+  --gris-claro: #D9D9D9;
+  --verde-claro-opaco: #adbe4a97;
+}

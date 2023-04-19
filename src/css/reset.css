@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  top: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: var(--background-color);
+  background-image: url('./assets/uuundulate.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+ul {
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
