@@ -1,38 +1,27 @@
-.header {
+
+.nav{
   display: flex;
-  background-color: transparent;
   justify-content: space-between;
-  align-items: center;
   text-align: center;
-  width: 100%;
+  align-items: center;
   z-index: 2;
   background-color: var(--verde-oscuro-opaco);
   backdrop-filter: blur(2px);
   border-bottom: solid 1px var(--blanco);
   position: relative;
+}
 
-  
-}
-.nav{
-  margin: 0 3rem;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
 .marca >img{
-  height: 4rem;
-  margin: 0;
+  height: 3.5rem;
 }
 .marca{
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--blanco);
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: bold;
-  margin: 0 3rem;
-  
+  margin-left: 2rem;
 }
 .marca > span{
   color: var(--verde-claro);
@@ -47,11 +36,12 @@
   display: inline-block;
   margin: 5px 5px;
   text-transform: uppercase;
+
 }
 
 .nav ul li a {
   color: var(--blanco);
-  padding: 7px 10px;
+  padding: 7px 7px;
   margin: 0 5px;
 }
 
@@ -68,51 +58,13 @@
 }
 
 .checkbtn {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  padding:  0 1rem;
   color: var(--blanco);
   background-color: transparent;
   cursor: pointer;
 }
 
-@media (min-width: 650px) {
-  .check{
-    display: none;
-  }
-  .checkbtn{
-    display: none;
-  }
-  
-  .nav ul li a {
-     font-size: 1.5rem;
-  }
-  
-}
-@media (max-width: 650px) {
-  .nav > ul {
-     position: fixed;
-     background-color: var(--light-pink);
-     width: 100%;
-     height: 25vh;
-     top: 50px;
-     left: -100%;
-     text-align: center;
-     border-radius: 10%;
-     transition: all 0.5s;
-  }
-  
-  .nav ul li {
-     display: block;
-  }
-  
-  .nav ul li a {
-     line-height: 1.5rem;
-  }
-  
-  .check:checked ~ ul {
-     left: 0;
-  }
-  
-}
 
 .userIcon{
   cursor: pointer;
@@ -143,6 +95,58 @@
 .desplegado > li{
   display: flex;
   margin: 10px 10px;
-  font-size: var(--mas1rem);
   
+}
+@media (min-width: 650px) {
+  .check{
+    display: none;
+  }
+  .checkbtn{
+    display: none;
+  }
+  
+  .nav ul li a {
+     font-size: 1rem;
+     margin: 2px 2px;
+  }
+
+  
+}
+@media (max-width: 650px) {
+  .nav > ul {
+     position: fixed;
+     background-color: var(--verde-oscuro-opaco);
+     width: 100%;
+     height: 25vh;
+     top: 35px;
+     left: -100%;
+     text-align: center;
+     border-radius: 10%;
+     transition: all 0.5s;
+  }
+  
+  .nav ul li {
+     display: block;
+  }
+  
+  .nav ul li a {
+     line-height: 1.5rem;
+     font-size: 1rem;
+  }
+  
+  .check:checked ~ ul {
+     left: 0;
+  }
+  .marca >img{
+    height: 1rem;
+  }
+  .marca{
+    font-size: 18px;
+  }
+  .marca > span {
+    font-size: 1rem;
+  }
+  .nav {
+    flex-flow: row wrap;
+  }
 }
