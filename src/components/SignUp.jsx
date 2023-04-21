@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import estilos from '../css/SignUp.module.css'
+
 function SignUp() {
 
   useEffect(() => {
@@ -43,7 +45,7 @@ function SignUp() {
 
   return (
     <div>
-      <form id="signup-form">
+      <form id="signup-form" className={estilos.signupform} >
         <label htmlFor="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
 

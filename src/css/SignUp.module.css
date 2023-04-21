@@ -1,0 +1,35 @@
+/* Estilos generales para el formulario */
+.signupform {
+    max-width: 37.5rem; 
+    margin: 0 auto;
+    padding: 1.25rem; 
+    background-color: rgba(182, 182, 182, 0.781);
+    border-radius: 0.625rem;
+  }
+  /* Estilos para los campos del formulario */
+  .signupform input[type="text"],
+  .signupform input[type="email"],
+  .signupform input[type="password"] {
+    width: 100%;
+    padding: 0.625rem; 
+    margin-bottom: 1.25rem; 
+    border-radius: 0.3125rem; 
+    border: none;
+    box-shadow: 0px 0px 0.3125rem 0px rgba(0, 0, 0, 0.2);
+  }
+  /* Estilos para el botón de enviar */
+  .signupform button[type="submit"] {
+    background-color: #1ABC9C;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+  }
+  
+  /* Estilos para el formulario en pantallas pequeñas */
+  @media screen and (max-width: 30rem) {
+  .signupform {
+      max-width: 100%;
+    }
+  }
