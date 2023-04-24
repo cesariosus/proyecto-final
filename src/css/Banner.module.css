@@ -1,0 +1,18 @@
+
+.imgBanner{
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  filter: var(--filter);
+}
+.title{
+  position: relative;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--gris-claro);
+}

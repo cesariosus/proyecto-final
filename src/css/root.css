@@ -8,6 +8,7 @@
   --gris-claro: #D9D9D9;
   --verde-claro-opaco: #adbe4a97;
   --background-img: url('./assets/uuundulate.svg');
+  --filter: brightness(50%);
 }
 
 [data-theme= "light"]{
@@ -20,4 +21,5 @@
   --verde-claro-opaco: #2b2a269b;
   --verde-oscuro-opaco: #adbe4a97;
   --background-img: url('./assets/uuundulate-light.svg');
+  --filter: brightness(80%);
 }
