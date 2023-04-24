@@ -140,9 +140,20 @@
   display: flex;
   justify-self: center;
   align-self: center;
-  width: 15vh;
-  height: 7vh;
+  width: 30%;
+  height: 50%;
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
+  color: var(--blanco);
+  font-size: 1.2rem;
+  font-weight: 200;
+  border: .5px solid var(--blanco);
+}
+.button span{
+  color: var(--verde-claro);
+  vertical-align: middle;
+  margin: 1rem;
+  
 }
