@@ -1,9 +1,9 @@
-import React from 'react'
+ 
 
 function LogIn() {
   return (
-    <div>LogIn</div>
+    <h1>hola</h1>
   )
+  
 }
-
 export default LogIn
