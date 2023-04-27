@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import estilos from "../css/login.module.css"
 
 function LogIn() {
@@ -19,7 +20,14 @@ function LogIn() {
     <a href="#">Don't have an account?</a>
 </form>
 </div>
-  )
-}
+=======
+ 
 
+function LogIn() {
+  return (
+    <h1>hola</h1>
+>>>>>>> ae75048a7874673cc535017e78057bbe0eaddfaa
+  )
+  
+}
 export default LogIn
