@@ -2,17 +2,32 @@ import React from 'react'
 import { FaBars } from "react-icons/fa";
 import styleHeader from '../css/Header.module.css'
 import ThemeToggle from './ThemeToggle';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaUser, FaCaretDown, FaCaretUp} from "react-icons/fa";
 
 function Header() {
   const [classList, setClassList] = useState(styleHeader.oculto);
+  const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("currentUser")));
+
+  const handleLogin = (user) => {
+    setCurrentUser(user);
+  };
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem("currentUser");
+  };
 
   const handleClick = () => {
-    setClassList(classList === styleHeader.oculto ? styleHeader.desplegado : styleHeader.oculto);
-  }
+    if (!currentUser) {
+      setClassList(classList === styleHeader.oculto ? styleHeader.desplegado : styleHeader.oculto);
+    }
+  };
+  useEffect(() => {
+    setCurrentUser(JSON.parse(localStorage.getItem("currentUser")));
+  }, []);
   
+
   return (
     <header>
       <nav className={styleHeader.nav} >
@@ -24,7 +39,7 @@ function Header() {
             <img src="./assets/logo.svg" alt="" />
           </article>
         </Link>
-  
+
         <ul>
           <li>
             <Link to="/home">Home</Link>
@@ -38,20 +53,32 @@ function Header() {
           <li>
             <Link to="/contacto">Contacto</Link>
           </li>
-              <ThemeToggle />
+          <ThemeToggle />
         </ul>
-        <span onClick={handleClick} className={styleHeader.userIcon}> <FaUser size={20}/>
-          {classList === styleHeader.oculto ? <FaCaretDown size={15}/> : <FaCaretUp size={15} />}
-           
-          <ul className={classList}>
-            <li>
-              <Link to="/logIn">Ingresar</Link>
-            </li>
-            <li>
-              <Link to="/signUp">Registrarse</Link>
-            </li>
-          </ul>
-        </span>
+
+        {!currentUser ? (
+          <span onClick={handleClick} className={styleHeader.userIcon}> 
+            <FaUser size={20}/>
+            {classList === styleHeader.oculto ? <FaCaretDown size={15}/> : <FaCaretUp size={15} />}
+            <ul className={classList}>
+              <li>
+                <Link to="/logIn">Ingresar</Link>
+              </li>
+              <li>
+                <Link to="/signUp">Registrarse</Link>
+              </li>
+            </ul>
+          </span>
+        ) : (
+          <li onClick={handleClick} className={styleHeader.userIcon}>
+            <FaUser size={20}/>
+            {classList === styleHeader.oculto ? <FaCaretDown size={15}/> : <FaCaretUp size={15} />}
+            {currentUser && (
+              <button onClick={handleLogout}>Cerrar Sesión</button>
+            )}
+          </li>
+        )}
+
       </nav>
     </header>
   )
