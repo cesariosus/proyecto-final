@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Banner from "./Banner"
 
 import estilos from '../css/SignUp.module.css'
 
@@ -45,6 +46,7 @@ function SignUp() {
 
   return (
     <div>
+      <Banner imagen="https://images.unsplash.com/photo-1591628996689-a20ea1ae1ad3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" titulo="Registrate Aqui!"/>
       <form id="signup-form" className={estilos.signupform} >
         <label htmlFor="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />

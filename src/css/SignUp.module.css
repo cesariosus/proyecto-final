@@ -1,6 +1,7 @@
 /* Estilos generales para el formulario */
 .signupform {
     max-width: 37.5rem; 
+    position: relative;
     margin: 0 auto;
     padding: 1.25rem; 
     background-color: rgba(182, 182, 182, 0.781);

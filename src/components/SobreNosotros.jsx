@@ -1,7 +1,11 @@
 import estilos from "../css/SobreNosotros.module.css"
+import Banner from "./Banner"
+
 
 function SobreNosotros() {
   return (
+    <>
+    <Banner imagen="https://plus.unsplash.com/premium_photo-1676620957661-0c20a9e7b61f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80" titulo="Conocenos"/>
     <section id="about" className={estilos.about}>
   <h2>Sobre nosotros</h2>
   <ul className={estilos.team}>
@@ -57,6 +61,7 @@ function SobreNosotros() {
     </p>
   </div>
 </section>
+</>
   )
 }
 
