@@ -48,7 +48,7 @@
   color: var(--verde-claro);
   justify-self: center;
   align-self: center;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   font-weight: 400;
 }
@@ -156,4 +156,23 @@
   vertical-align: middle;
   margin: 1rem;
   
+}
+
+@media (max-width: 780px) {
+  .quien{
+    font-size: large;
+  }
+  .quien span{
+    font-size: medium;
+  }
+  .ayudar{
+    font-size: large;
+    
+  }
+  .ayudar span{
+    font-size: medium;
+  }
+  .button h1{
+    font-size: large;
+  }
 }
