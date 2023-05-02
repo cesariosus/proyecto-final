@@ -103,6 +103,7 @@
   backdrop-filter: blur(2px);
   cursor: pointer;
   border-radius: 20px;
+
 }
 .logout:hover{
   color: var(--verde-oscuro-opaco);
