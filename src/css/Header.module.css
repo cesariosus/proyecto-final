@@ -97,6 +97,19 @@
   margin: 10px 10px;
   
 }
+.logout{
+  background-color: var(--verde-oscuro-opaco);
+  color: var(--blanco);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+.logout:hover{
+  color: var(--verde-oscuro-opaco);
+  background-color: var(--blanco);
+}
+
 @media (min-width: 650px) {
   .check{
     display: none;

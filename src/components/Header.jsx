@@ -74,7 +74,7 @@ function Header() {
             <FaUser size={20}/>
             {classList === styleHeader.oculto ? <FaCaretDown size={15}/> : <FaCaretUp size={15} />}
             {currentUser && (
-              <button onClick={handleLogout}>Cerrar Sesión</button>
+              <button onClick={handleLogout} className={styleHeader.logout}>Cerrar Sesión</button>
             )}
           </li>
         )}

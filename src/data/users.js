@@ -1,14 +1,14 @@
 const usersData = [];
 usersData.push({
   id: 1,
-  username: "administrador",
+  username: "admin",
   password: "admin",
   roll: "admin",
 });
 usersData.push({
   id: 2,
-  username: "Leidy",
-  password: "12345",
+  username: "leidy",
+  password: "1234",
   roll: "usuario",
 });
 export default usersData;
