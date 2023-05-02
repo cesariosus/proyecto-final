@@ -1,0 +1,55 @@
+.comments {
+  margin: 4rem;
+  background-color: var(--dark-grey);
+  padding: 3rem;
+  width: 100%;
+}
+
+.comments h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--blanco);
+}
+
+.comments ul {
+  background-color: var(--gris-claro);
+  list-style: none;
+  padding: 0;
+  padding: 1rem;
+  margin: 2rem;
+}
+.comments li {
+  margin-bottom: 10px;
+}
+
+.comments p {
+  margin-bottom: 5px;
+  color: var(--background-color);
+  background-color: var(--blanco);
+}
+
+.comments .commentInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.comments input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.comments button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
