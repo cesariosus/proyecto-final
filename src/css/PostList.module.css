@@ -1,0 +1,55 @@
+.postList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.postCard {
+  width: 20%;
+  height: 400px;
+  margin: 20px;
+  border-radius: 5px;
+  /*border: 1px solid var(--gris-claro);*/
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+
+.postCard h3 {
+  margin-top: 0;
+  color: var(--blanco);
+  justify-self: end;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
+  font-weight: 400;
+  padding: 1rem;
+  
+}
+
+.postCard p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.postCard img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(100%); 
+}
+
+.postCard:hover {
+  filter: brightness(130%);
+  
+}
+
+@media (max-width: 800px) {
+  .postCard{
+    width: 50%;
+  }
+}
