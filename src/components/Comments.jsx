@@ -9,7 +9,7 @@ const Comments = () => {
   ]);
 
   useEffect(() => {
-    const storedComments = JSON.parse(localStorage.getItem("comments")) || comments;
+    const storedComments = JSON.parse(localStorage.getItem("comments")) || [];
     setComments(storedComments);
   }, []);
 
@@ -19,7 +19,8 @@ const Comments = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (comment.trim() !== "" && author.trim() !== "") {
+    const storedUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (comment.trim() !== "" && author.trim() !== "" && storedUser && storedUser.role === "usuario") {
       const newComment = {
         author: author.trim(),
         date: new Date().toLocaleDateString(),
@@ -28,26 +29,24 @@ const Comments = () => {
       setComments([...comments, newComment]);
       setComment("");
       setAuthor("");
+    } else if (storedUser && storedUser.role !== "usuario") {
+      alert("Solo los usuarios pueden comentar");
+    } else {
+      alert("Debes iniciar sesión para poder comentar");
     }
   };
 
-  const handleDelete = (index) => {
-    const newComments = comments.filter((comment, i) => i !== index);
-    setComments(newComments);
-  };
-
   return (
-    <div className={styles.comments}>
+    <section className={styles.comments}>
       <h3>Comentarios:</h3>
       <ul>
         {comments.map((comment, index) => (
           <li key={index}>
             <p>{comment.content}</p>
-            <div className={styles.commentInfo}>
+            <section className={styles.commentInfo}>
               <span>{comment.author}</span>
               <span>{comment.date}</span>
-              <button onClick={() => handleDelete(index)}>Eliminar</button>
-            </div>
+            </section>
           </li>
         ))}
       </ul>
@@ -64,10 +63,12 @@ const Comments = () => {
           value={comment}
           onChange={(event) => setComment(event.target.value)}
         />
-        <button type="submit">Subir Comentario</button>
+        <button type="submit">Submit</button>
       </form>
-    </div>
+    </section>
   );
 };
+
+
 
 export default Comments;
