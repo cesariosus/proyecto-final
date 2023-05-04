@@ -12,7 +12,7 @@ export default function Testimonials() {
   <Section className="testimonials">
     <Section className="testimonial">
       <p>
-        "¡Mi viaje a la costa caribe colombiana fue espectacular! Las playas son hermosas y la gente es muy acogedora. Sin duda volvería a visitar Colombia."
+       "Nunca había estado tan maravillado con la naturaleza como cuando visité las reservas naturales de Colombia. Ver los majestuosos árboles, los hermosos ríos y las impresionantes montañas me dejó sin palabras."
       </p>
       <Section className="info">
       <img src={avatarImage2} alt="" />
@@ -24,7 +24,7 @@ export default function Testimonials() {
     </Section>
     <Section className="testimonial">
       <p>
-        "Me encantó mi experiencia en el Eje Cafetero. La belleza natural de la región, el aroma a café y la calidez de su gente hicieron de mi viaje algo inolvidable."
+        "Mi viaje a las reservas naturales de Colombia fue una experiencia que nunca olvidaré. Desde las impresionantes vistas hasta los sonidos de la naturaleza que me rodeaban, todo fue increíble. Realmente me sentí en paz y conectado con el mundo natural."
       </p>
       <Section className="info">
         <img src={avatarImage} alt="" />
@@ -36,7 +36,7 @@ export default function Testimonials() {
     </Section>
     <Section className="testimonial">
       <p>
-        "No tengo palabras para describir lo maravilloso que fue mi visita a Cartagena de Indias. La arquitectura colonial, la gastronomía y la alegría de su gente hacen de esta ciudad un lugar único en el mundo."
+         "Explorar las reservas naturales de Colombia fue una aventura emocionante que nunca olvidaré. Desde caminar por senderos rodeados de árboles hasta descubrir hermosas cascadas y ríos, cada día fue una experiencia única."
       </p>
       <Section className="info">
         <img src={avatarImage3} alt="" />
