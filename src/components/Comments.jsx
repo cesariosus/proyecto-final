@@ -5,7 +5,11 @@ const Comments = () => {
   const [comment, setComment] = useState("");
   const [author, setAuthor] = useState("");
   const [comments, setComments] = useState([
-    { author: "John Doe", date: "01/01/2022", content: "Este es un comentario predeterminado" },
+    {
+      author: "John Doe",
+      date: "01/01/2022",
+      content: "Este es un comentario predeterminado",
+    },
   ]);
 
   useEffect(() => {
@@ -20,7 +24,12 @@ const Comments = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const storedUser = JSON.parse(localStorage.getItem("currentUser"));
-    if (comment.trim() !== "" && author.trim() !== "" && storedUser && storedUser.role === "usuario") {
+    if (
+      comment.trim() !== "" &&
+      author.trim() !== "" &&
+      storedUser &&
+      storedUser.role === "usuario"
+    ) {
       const newComment = {
         author: author.trim(),
         date: new Date().toLocaleDateString(),
@@ -68,7 +77,5 @@ const Comments = () => {
     </section>
   );
 };
-
-
 
 export default Comments;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -9,9 +9,8 @@
   list-style: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -24,13 +23,13 @@ body {
   display: flex;
   flex-direction: column;
   user-select: none;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: "IBM Plex Serif", serif;
 }
 
 ul {
   padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }

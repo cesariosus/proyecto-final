@@ -11,7 +11,10 @@ export default function Hero() {
         <section className="title">
           <h1>Atrévete a explorar nuevos horizontes</h1>
           <p>
-          Colombia cuenta con diversas reservas naturales que ofrecen una gran variedad de flora y fauna, así como paisajes impresionantes. Estas áreas protegidas son ideales para practicar turismo ecológico y disfrutar de la naturaleza.
+            Colombia cuenta con diversas reservas naturales que ofrecen una gran
+            variedad de flora y fauna, así como paisajes impresionantes. Estas
+            áreas protegidas son ideales para practicar turismo ecológico y
+            disfrutar de la naturaleza.
           </p>
         </section>
         <section className="search">

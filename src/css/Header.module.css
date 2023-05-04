@@ -1,5 +1,4 @@
-
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -11,10 +10,10 @@
   position: relative;
 }
 
-.marca >img{
+.marca > img {
   height: 3.5rem;
 }
-.marca{
+.marca {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +22,7 @@
   font-weight: bold;
   margin-left: 2rem;
 }
-.marca > span{
+.marca > span {
   color: var(--verde-claro);
   font-weight: bold;
 }
@@ -36,7 +35,6 @@
   display: inline-block;
   margin: 5px 5px;
   text-transform: uppercase;
-
 }
 
 .nav ul li a {
@@ -47,30 +45,29 @@
 
 .nav ul li a.active,
 .nav ul li a:hover {
-  background-color:var(--blanco);
+  background-color: var(--blanco);
   color: var(--background-color);
   border-radius: 10%;
   transition: 0.2s;
 }
 
-.check{
+.check {
   display: none;
 }
 
 .checkbtn {
   font-size: 1.5rem;
-  padding:  0 1rem;
+  padding: 0 1rem;
   color: var(--blanco);
   background-color: transparent;
   cursor: pointer;
 }
 
-
-.userIcon{
+.userIcon {
   cursor: pointer;
   color: var(--blanco);
 }
-.oculto{
+.oculto {
   display: none;
 }
 .desplegado {
@@ -80,7 +77,7 @@
   z-index: 1;
   display: flex;
   margin: 3rem 1rem;
-  right: -.5vh;
+  right: -0.5vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -90,70 +87,65 @@
   color: var(--light-blue);
   cursor: pointer;
   text-decoration: underline;
-  
 }
-.desplegado > li{
+.desplegado > li {
   display: flex;
   margin: 10px 10px;
-  
 }
-.logout{
+.logout {
   background-color: var(--verde-oscuro-opaco);
   color: var(--blanco);
   backdrop-filter: blur(2px);
   cursor: pointer;
   border-radius: 20px;
-
 }
-.logout:hover{
+.logout:hover {
   color: var(--verde-oscuro-opaco);
   background-color: var(--blanco);
 }
 
 @media (min-width: 650px) {
-  .check{
+  .check {
     display: none;
   }
-  .checkbtn{
+  .checkbtn {
     display: none;
-  }
-  
-  .nav ul li a {
-     font-size: 1rem;
-     margin: 2px 2px;
   }
 
-  
+  .nav ul li a {
+    font-size: 1rem;
+    margin: 2px 2px;
+  }
 }
 @media (max-width: 650px) {
   .nav > ul {
-     position: fixed;
-     background-color: var(--verde-oscuro-opaco);
-     width: 100%;
-     height: 25vh;
-     top: 35px;
-     left: -100%;
-     text-align: center;
-     border-radius: 10%;
-     transition: all 0.5s;
+    position: fixed;
+    background-color: var(--verde-oscuro-opaco);
+    width: 100%;
+    height: 25vh;
+    top: 35px;
+    left: -100%;
+    text-align: center;
+    border-radius: 10%;
+    transition: all 0.5s;
   }
-  
+
   .nav ul li {
-     display: block;
+    display: block;
   }
-  
+
   .nav ul li a {
-     line-height: 1.5rem;
-     font-size: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
   }
-  
+
   .check:checked ~ ul {
-     left: 0;
+    left: 0;
   }
-  .marca >img{
+  .marca > img {
     height: 1rem;
   }
-  .marca{
+  .marca {
     font-size: 18px;
   }
   .marca > span {

@@ -13,7 +13,6 @@ export default function ScrollToTop() {
     <ToTop onClick={toTop} scrollState={scrollState}>
       <img src={logo} alt="" />
     </ToTop>
-    
   );
 }
 
@@ -30,6 +29,4 @@ const ToTop = styled.div`
   background-color: #white;
   padding: 1rem;
   bottom: 100;
-  
 `;
-

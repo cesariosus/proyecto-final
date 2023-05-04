@@ -10,8 +10,7 @@ export default function Services() {
     {
       icon: service1,
       title: "Los mejores precios",
-      subTitle:
-        "Paga con tu tarjeta de credito y obten los mejores descuentos",
+      subTitle: "Paga con tu tarjeta de credito y obten los mejores descuentos",
     },
     {
       icon: service2,

@@ -1,25 +1,25 @@
-:root{
+:root {
   --background-color: #252320;
   --verde-oscuro-opaco: #2b2a269b;
-  --verde-claro: #ACBE4A;
-  --texto-secundario: #C8C4C4;
+  --verde-claro: #acbe4a;
+  --texto-secundario: #c8c4c4;
   --blanco: #ffffff;
   --dark-grey: #868686;
-  --gris-claro: #D9D9D9;
+  --gris-claro: #d9d9d9;
   --verde-claro-opaco: #adbe4a97;
-  --background-img: url('./assets/uuundulate.svg');
+  --background-img: url("./assets/uuundulate.svg");
   --filter: brightness(50%);
 }
 
-[data-theme= "light"]{
+[data-theme="light"] {
   --background-color: #ffff;
   --verde-claro: #30db5e;
-  --texto-secundario: #C8C4C4;
+  --texto-secundario: #c8c4c4;
   --blanco: #252320;
   --dark-grey: #626362;
-  --gris-claro: #D9D9D9;
+  --gris-claro: #d9d9d9;
   --verde-claro-opaco: #2b2a269b;
   --verde-oscuro-opaco: #adbe4a97;
-  --background-img: url('./assets/uuundulate-light.svg');
+  --background-img: url("./assets/uuundulate-light.svg");
   --filter: brightness(80%);
 }

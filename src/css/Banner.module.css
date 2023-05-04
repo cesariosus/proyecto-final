@@ -1,5 +1,4 @@
-
-.imgBanner{
+.imgBanner {
   height: 20rem;
   width: 100%;
   position: absolute;
@@ -8,7 +7,7 @@
   left: 0;
   filter: var(--filter);
 }
-.title{
+.title {
   position: relative;
   height: 18rem;
   display: flex;

@@ -15,40 +15,42 @@ export default function Recommend() {
     {
       image: Destination1,
       title: "Parque Nacional Natural La Paya",
-      subTitle: "El Parque Nacional Natural La Paya es un área protegida de 422 000 Hectáreas, está ubicada en el municipio de Puerto Leguízamo, departamento del Putumayo, Colombia. Es refugio natural del caimán negro del Amazonas",
+      subTitle:
+        "El Parque Nacional Natural La Paya es un área protegida de 422 000 Hectáreas, está ubicada en el municipio de Puerto Leguízamo, departamento del Putumayo, Colombia. Es refugio natural del caimán negro del Amazonas",
     },
     {
       image: Destination2,
       title: "Santuario de Fauna Acandí, Playón y Playona",
-      subTitle: "El Santuario de Fauna y Flora Playona Acandí es uno de los once nuevos parques nacionales en Colombia. Es el hogar de la Tortuga Caña. Este parque se encuentra en la costa caribeña del Departamento de Chocó.",
+      subTitle:
+        "El Santuario de Fauna y Flora Playona Acandí es uno de los once nuevos parques nacionales en Colombia. Es el hogar de la Tortuga Caña. Este parque se encuentra en la costa caribeña del Departamento de Chocó.",
     },
     {
       image: Destination3,
       title: "Parque Nacional Natural Sierra Nevada de Santa Marta",
-      subTitle: "El parque nacional natural Sierra Nevada de Santa Marta es una de las áreas protegidas del sistema de parques nacionales naturales de Colombia y la segunda más antigua, creada en 1964.",
+      subTitle:
+        "El parque nacional natural Sierra Nevada de Santa Marta es una de las áreas protegidas del sistema de parques nacionales naturales de Colombia y la segunda más antigua, creada en 1964.",
     },
     {
       image: Destination4,
       title: "Parque Nacional Natural Gorgona",
-      subTitle: "Parque Nacional Natural Gorgona es un pequeño paraíso en medio del Océano Pacífico, con una frondosa y exuberante selva tropical. Está formado por dos islas, Gorgona y Gorgonilla. La Isla Gorgona es una isla ubicada a 28 km al oeste de la costa del Pacífico colombiano",
+      subTitle:
+        "Parque Nacional Natural Gorgona es un pequeño paraíso en medio del Océano Pacífico, con una frondosa y exuberante selva tropical. Está formado por dos islas, Gorgona y Gorgonilla. La Isla Gorgona es una isla ubicada a 28 km al oeste de la costa del Pacífico colombiano",
     },
     {
-      image:Destination5,
+      image: Destination5,
       title: "Parque Nacional Natural Macuira",
-      subTitle: "La serranía de Macuira es un ecosistema único en Colombia con montañas y bosques en contraste con la geografía desértica. Hay varios animales y nacimientos de agua. La entrada es gratis y se puede llegar a la cascada de Porcina y los pozos cercanos con una corta caminata.",
+      subTitle:
+        "La serranía de Macuira es un ecosistema único en Colombia con montañas y bosques en contraste con la geografía desértica. Hay varios animales y nacimientos de agua. La entrada es gratis y se puede llegar a la cascada de Porcina y los pozos cercanos con una corta caminata.",
     },
     {
-      image:Destination6,
+      image: Destination6,
       title: "Parque Nacional Natural Sumapaz",
-      subTitle: "El Parque Nacional Natural Sumapaz es un área protegida en Colombia con acceso desde Bogotá, que incluye el Nevado del Sumapaz y diversas especies de flora y fauna. Tiene una historia precolombina y de la época de la Conquista.",
-    }
-    ,
+      subTitle:
+        "El Parque Nacional Natural Sumapaz es un área protegida en Colombia con acceso desde Bogotá, que incluye el Nevado del Sumapaz y diversas especies de flora y fauna. Tiene una historia precolombina y de la época de la Conquista.",
+    },
   ];
 
-  const packages = [
-    "Articulos recientes",
-
-  ];
+  const packages = ["Articulos recientes"];
 
   const [active, setActive] = useState(1);
   return (

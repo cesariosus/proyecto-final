@@ -16,34 +16,33 @@ const PostList = () => {
       />
       <section className={styles.postList}>
         <section>
-          <input className={styles.busqueda}
+          <input
+            className={styles.busqueda}
             type="text"
             placeholder="Buscar posts..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </section>
-       <section className={styles.postall}>
-       {posts
-          .filter((post) =>
-            post.title.toLowerCase().includes(searchTerm.toLowerCase())
-          )
-          .map((post) => (
-            <Link
-              to={`/post/${post.id}`}
-              key={post.id}
-              className={styles.postCard}
-            >
-              <img src={post.imageUrl} alt="" />
-              <h3>{post.title}</h3>
-            </Link>
-          ))}
-       </section>
+        <section className={styles.postall}>
+          {posts
+            .filter((post) =>
+              post.title.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+            .map((post) => (
+              <Link
+                to={`/post/${post.id}`}
+                key={post.id}
+                className={styles.postCard}
+              >
+                <img src={post.imageUrl} alt="" />
+                <h3>{post.title}</h3>
+              </Link>
+            ))}
+        </section>
       </section>
     </>
   );
 };
 
 export default PostList;
-
-

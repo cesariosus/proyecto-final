@@ -5,49 +5,58 @@ import avatarImage2 from "../assets/avatarImage2.webp";
 import avatarImage3 from "../assets/avatarImage3.webp";
 export default function Testimonials() {
   return (
-<Section id="testimonials">
-  <Section className="title">
-    <h2>Testimonios de Viajeros</h2>
-  </Section>
-  <Section className="testimonials">
-    <Section className="testimonial">
-      <p>
-       "Nunca había estado tan maravillado con la naturaleza como cuando visité las reservas naturales de Colombia. Ver los majestuosos árboles, los hermosos ríos y las impresionantes montañas me dejó sin palabras."
-      </p>
-      <Section className="info">
-      <img src={avatarImage2} alt="" />
-        <Section className="details">
-          <h4>María Pérez</h4>
-          <span>Argentina</span>
+    <Section id="testimonials">
+      <Section className="title">
+        <h2>Testimonios de Viajeros</h2>
+      </Section>
+      <Section className="testimonials">
+        <Section className="testimonial">
+          <p>
+            "Nunca había estado tan maravillado con la naturaleza como cuando
+            visité las reservas naturales de Colombia. Ver los majestuosos
+            árboles, los hermosos ríos y las impresionantes montañas me dejó sin
+            palabras."
+          </p>
+          <Section className="info">
+            <img src={avatarImage2} alt="" />
+            <Section className="details">
+              <h4>María Pérez</h4>
+              <span>Argentina</span>
+            </Section>
+          </Section>
+        </Section>
+        <Section className="testimonial">
+          <p>
+            "Mi viaje a las reservas naturales de Colombia fue una experiencia
+            que nunca olvidaré. Desde las impresionantes vistas hasta los
+            sonidos de la naturaleza que me rodeaban, todo fue increíble.
+            Realmente me sentí en paz y conectado con el mundo natural."
+          </p>
+          <Section className="info">
+            <img src={avatarImage} alt="" />
+            <Section className="details">
+              <h4>Lucas González</h4>
+              <span>Uruguay</span>
+            </Section>
+          </Section>
+        </Section>
+        <Section className="testimonial">
+          <p>
+            "Explorar las reservas naturales de Colombia fue una aventura
+            emocionante que nunca olvidaré. Desde caminar por senderos rodeados
+            de árboles hasta descubrir hermosas cascadas y ríos, cada día fue
+            una experiencia única."
+          </p>
+          <Section className="info">
+            <img src={avatarImage3} alt="" />
+            <Section className="details">
+              <h4>Carla Fernández</h4>
+              <span>México</span>
+            </Section>
+          </Section>
         </Section>
       </Section>
     </Section>
-    <Section className="testimonial">
-      <p>
-        "Mi viaje a las reservas naturales de Colombia fue una experiencia que nunca olvidaré. Desde las impresionantes vistas hasta los sonidos de la naturaleza que me rodeaban, todo fue increíble. Realmente me sentí en paz y conectado con el mundo natural."
-      </p>
-      <Section className="info">
-        <img src={avatarImage} alt="" />
-        <Section className="details">
-          <h4>Lucas González</h4>
-          <span>Uruguay</span>
-        </Section>
-      </Section>
-    </Section>
-    <Section className="testimonial">
-      <p>
-         "Explorar las reservas naturales de Colombia fue una aventura emocionante que nunca olvidaré. Desde caminar por senderos rodeados de árboles hasta descubrir hermosas cascadas y ríos, cada día fue una experiencia única."
-      </p>
-      <Section className="info">
-        <img src={avatarImage3} alt="" />
-        <Section className="details">
-          <h4>Carla Fernández</h4>
-          <span>México</span>
-        </Section>
-      </Section>
-    </Section>
-  </Section>
-</Section>
   );
 }
 

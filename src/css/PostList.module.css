@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 }
-.busqueda{
+.busqueda {
   background-color: var(--verde-claro);
   width: 50vh;
   height: 6vh;
@@ -14,21 +14,20 @@
   padding: 5px;
 }
 
-.busqueda input{
+.busqueda input {
   margin-left: 1rem;
   width: 100%;
   background-color: transparent;
   border-bottom: 1px solid var(--dark-grey);
   font-size: large;
 }
-.postall{
+.postall {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .postCard {
-  
   width: 20%;
   height: 400px;
   margin: 20px;
@@ -40,7 +39,6 @@
   text-align: center;
 }
 
-
 .postCard h3 {
   margin-top: 0;
   color: var(--blanco);
@@ -50,7 +48,6 @@
   backdrop-filter: blur(10px);
   font-weight: 400;
   padding: 1rem;
-  
 }
 
 .postCard p {
@@ -64,17 +61,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(100%); 
+  filter: brightness(100%);
 }
 
 .postCard:hover {
   filter: brightness(130%);
-  
 }
 
-
 @media (max-width: 800px) {
-  .postCard{
+  .postCard {
     width: 50%;
   }
 }
