@@ -1,21 +1,18 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../css/Comments.module.css";
 
-const Comments = ({ }) => {
+const Comments = () => {
   const [comment, setComment] = useState("");
   const [author, setAuthor] = useState("");
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState([
+    { author: "John Doe", date: "01/01/2022", content: "Este es un comentario predeterminado" },
+  ]);
 
-  // Cargar los comentarios desde el localStorage cuando el componente se monte
-  
-useEffect(() => {
-  const storedComments = JSON.parse(localStorage.getItem("comments")) || [];
-  setComments(storedComments);
-  const storedUser = JSON.parse(localStorage.getItem("currentUser"));
-}, []);
+  useEffect(() => {
+    const storedComments = JSON.parse(localStorage.getItem("comments")) || comments;
+    setComments(storedComments);
+  }, []);
 
-
-  // Guardar los comentarios en el localStorage cada vez que cambien
   useEffect(() => {
     localStorage.setItem("comments", JSON.stringify(comments));
   }, [comments]);
@@ -23,20 +20,20 @@ useEffect(() => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (comment.trim() !== "" && author.trim() !== "") {
-      const storedUser = JSON.parse(localStorage.getItem("currentUser"));
-      if (storedUser && storedUser.roll === "usuario") {
-        const newComment = {
-          author: author.trim(),
-          date: new Date().toLocaleDateString(),
-          content: comment.trim(),
-        };
-        setComments([...comments, newComment]);
-        setComment("");
-        setAuthor("");
-      } else {
-        alert("Solo los usuarios pueden comentar");
-      }
+      const newComment = {
+        author: author.trim(),
+        date: new Date().toLocaleDateString(),
+        content: comment.trim(),
+      };
+      setComments([...comments, newComment]);
+      setComment("");
+      setAuthor("");
     }
+  };
+
+  const handleDelete = (index) => {
+    const newComments = comments.filter((comment, i) => i !== index);
+    setComments(newComments);
   };
 
   return (
@@ -49,6 +46,7 @@ useEffect(() => {
             <div className={styles.commentInfo}>
               <span>{comment.author}</span>
               <span>{comment.date}</span>
+              <button onClick={() => handleDelete(index)}>Eliminar</button>
             </div>
           </li>
         ))}
@@ -66,7 +64,7 @@ useEffect(() => {
           value={comment}
           onChange={(event) => setComment(event.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit">Subir Comentario</button>
       </form>
     </div>
   );

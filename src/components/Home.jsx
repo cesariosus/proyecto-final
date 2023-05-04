@@ -1,8 +1,18 @@
-import React from 'react'
+import ScrollToTop from './ScrollToTop';
+import Hero from './Hero';
+import Services from './Services';
+import Recommend from './Recommend';
+import Testimonials from './Testimonials';
 
 function Home() {
   return (
-    <div>Home</div>
+   <>
+    <ScrollToTop />
+    <Hero />
+    <Services />
+    <Recommend />
+    <Testimonials />
+    </>
   )
 }
 
