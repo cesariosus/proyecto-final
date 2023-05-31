@@ -3,6 +3,7 @@ import styled from "styled-components";
 import avatarImage from "../assets/avatarImage.jpeg";
 import avatarImage2 from "../assets/avatarImage2.webp";
 import avatarImage3 from "../assets/avatarImage3.webp";
+
 export default function Testimonials() {
   return (
     <Section id="testimonials">
@@ -66,8 +67,8 @@ const Section = styled.section`
     text-align: center;
     margin-bottom: 2rem;
     background-color: aliceblue;
-    width:100px
-    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 5px;
   }
   .testimonials {
     display: flex;
@@ -85,20 +86,20 @@ const Section = styled.section`
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
       .info {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        align-items: center;
-        margin-top: 1rem;
-        img {
-          border-radius: 3rem;
-          height: 3rem;
-        }
-        .details {
-          span {
-            font-size: 0.9rem;
-          }
-        }
+        display:flex; 
+ justify-content :center; 
+ gap :1rem; 
+ align-items :center; 
+ margin-top :1rem; 
+ img{
+ border-radius :3rem; 
+ height :3rem; 
+ }
+ .details{
+ span{
+ font-size :0.9rem; 
+ }
+ }
       }
     }
   }
@@ -116,3 +117,4 @@ const Section = styled.section`
     }
   }
 `;
+
