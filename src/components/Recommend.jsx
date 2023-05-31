@@ -96,6 +96,11 @@ export default function Recommend() {
 
 const Section = styled.section`
   padding: 2rem 0;
+  .title,
+  .packages {
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
   .title {
     text-align: center;
     background-color: aliceblue;
@@ -142,41 +147,42 @@ const Section = styled.section`
         display: flex;
         align-items: center;
         .services {
-          display: flex;
-          gap: 0.3rem;
-          img {
-            border-radius: 1rem;
-            background-color: #4d2ddb84;
-            width: 2rem;
-            /* padding: 1rem; */
-            padding: 0.3rem 0.4rem;
-          }
+          display:flex; 
+ gap :0.3rem; 
+ img{
+ border-radius :1rem; 
+ background-color :#4d2ddb84; 
+ width :2rem; 
+ padding :0.3rem 0.4rem; 
+ }
         }
-        display: flex;
-        justify-content: space-between;
+        display:flex; 
+ justify-content :space-between; 
       }
-      .distance {
-        display: flex;
-        justify-content: space-between;
-      }
+      .distance{
+ display:flex; 
+ justify-content :space-between; 
+ }
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 768px) {
-    .packages {
-      ul {
-        li {
-          padding: 0 0.5rem;
-          font-size: 2vh;
-          padding-bottom: 1rem;
-        }
-        .active {
-          border-bottom-width: 0.3rem;
-        }
-      }
-    }
-    .destinations {
-      grid-template-columns: 1fr;
-      padding: 0;
-    }
-  }
+ @media screen and (min-width :280px) and (max-width :768px){
+height :25rem; 
+.packages{
+ul{
+li{
+padding :0.5rem; 
+font-size :2vh; 
+padding-bottom :1rem; 
+}
+.active{
+border-bottom-width :0.3rem; 
+}
+}
+}
+.destinations{
+grid-template-columns :1fr; 
+padding :0; 
+}
+}
 `;
+
