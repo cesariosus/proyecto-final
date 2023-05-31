@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import homeImage from "../assets/hero.png";
+
 export default function Hero() {
   return (
     <Section id="hero">
@@ -11,18 +12,14 @@ export default function Hero() {
         <section className="title">
           <h1>Atrévete a explorar nuevos horizontes</h1>
           <p>
-            Colombia cuenta con diversas reservas naturales que ofrecen una gran
-            variedad de flora y fauna, así como paisajes impresionantes. Estas
-            áreas protegidas son ideales para practicar turismo ecológico y
-            disfrutar de la naturaleza.
+            Colombia cuenta con diversas reservas naturales que ofrecen una
+            gran variedad de flora y fauna, así como paisajes impresionantes.
+            Estas áreas protegidas son ideales para practicar turismo ecológico
+            y disfrutar de la naturaleza.
           </p>
         </section>
         <section className="search">
-          <section className="container">
-            <label htmlFor="">¿A donde quieres ir?</label>
-            <input type="text" placeholder="Encuentra tu lugar ideal" />
-          </section>
-          <button>¡Explora ahora!</button>
+          <button onClick={() => window.location.href = "/posts"}>¡Explora ahora!</button>
         </section>
       </section>
     </Section>
@@ -68,88 +65,67 @@ const Section = styled.section`
       }
     }
     .search {
-      display: flex;
-      background-color: #ffffffce;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 1.5rem;
-        label {
-          font-size: 1.1rem;
-          color: #03045e;
-        }
-        input {
-          background-color: transparent;
-          border: none;
-          text-align: center;
-          color: black;
-          &[type="date"] {
-            padding-left: 3rem;
-          }
+      width:auto; 
+      padding :0.5rem; 
+ align-items:center; 
+ background-color:#ffffffce; 
+ border-radius :0.5rem; 
+ button{
+ padding :1rem; 
+ cursor:pointer; 
+ border-radius :0.3rem; 
+ border:none; 
+ color:white; 
+ background-color:#4361ee; 
+ font-size :1.1rem; 
+ text-transform :uppercase; 
+ transition :0.3s ease-in-out; 
+ &:hover{
+ background-color:#023e8a; 
+ }
+ }
+ }
+ }
+@media screen and (min-width :280px) and (max-width :980px){
+height :25rem; 
+.background{
+background-color:palegreen; 
+img{
+height :100%; 
+}
+}
+.content{
+.title{
+h1{
+font-size :1rem; 
+}
+p{
+font-size :0.8rem; 
+padding :1vw; 
+}
+}
+.search{
+flex-direction :column; 
+padding :0.8rem; 
 
-          &::placeholder {
-            color: black;
-          }
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-      button {
-        padding: 1rem;
-        cursor: pointer;
-        border-radius: 0.3rem;
-        border: none;
-        color: white;
-        background-color: #4361ee;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        transition: 0.3s ease-in-out;
-        &:hover {
-          background-color: #023e8a;
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 280px) and (max-width: 980px) {
-    height: 25rem;
-    .background {
-      background-color: palegreen;
-      img {
-        height: 100%;
-      }
-    }
-    .content {
-      .title {
-        h1 {
-          font-size: 1rem;
-        }
-        p {
-          font-size: 0.8rem;
-          padding: 1vw;
-        }
-      }
-      .search {
-        flex-direction: column;
-        padding: 0.8rem;
-        gap: 0.8rem;
-        /* padding: 0; */
-        .container {
-          padding: 0 0.8rem;
-          input[type="date"] {
-            padding-left: 1rem;
-          }
-        }
-        button {
-          padding: 1rem;
-          font-size: 1rem;
-        }
-        /* display: none; */
-      }
-    }
-  }
+button{
+padding :1rem; 
+font-size :1rem; 
+
+}
+}
+}
+@media screen and (min-width: 2560px) and (max-height: 1080px) {
+ .content {
+ .search {
+ width:auto;
+ border-radius: 15px;
+ button {
+ font-size: 2rem;
+ padding: 2rem;
+ }
+ }
+ }
+}
 `;
+
